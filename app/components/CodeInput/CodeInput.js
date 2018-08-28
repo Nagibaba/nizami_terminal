@@ -45,12 +45,13 @@ class CodeInput extends Component{
       // this.onChangeText = this.onChangeText.bind(this)
       this.handleChange = this.handleChange.bind(this)
       this.inputRefs = []
+      this.onFocus = this.onFocus.bind(this)
     }
     // onChangeText(name){
     //     this.inputRefs[name].focus();
     // }
 
-    handleKeyDown(e){
+    handleKeyDown(){
         Alert.alert('salam')
     }
     handleChange(text, name){
@@ -60,12 +61,17 @@ class CodeInput extends Component{
         if (text!='') {
             if(typeof this.inputRefs[nextInput]!='undefined' ){
                 this.inputRefs[nextInput].focus();
+                this.inputRefs[nextInput].value = null
             }
         } else {
             if(typeof this.inputRefs[prevInput]!='undefined' ){
                 this.inputRefs[prevInput].focus();
+                this.inputRefs[prevInput].value = null;
             }
         }
+
+    }
+    onFocus(){
 
     }
     render(){
@@ -80,8 +86,12 @@ class CodeInput extends Component{
                         keyboardType="numeric"
                         style={styles.input}
                         ref={(input)=>this.inputRefs[id] = input}
+                        maxLength={1}
                         onChangeText={(text)=>this.handleChange(text, id)}
-                        onKeyPress={this.handleKeyDown}
+                        blurOnSubmit={true}
+                        onKeyUp={(e)=> { Alert.alert("onKeyPress")} } 
+                        handleKeyPress={this.handleKeyDown}
+                        onFocus={this.onFocus}
                         // value={props.text}
                         
                     />
