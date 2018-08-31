@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { View, Text, TextInput, Alert, DeviceEventEmitter } from 'react-native';
 import styles from './styles'
 
+import KeyEvent from 'react-native-keyevent';
+
 // const BTextInput = (props)=>{
 //     const inputRefs = []
 //     const handleChange = (name)=>{
@@ -52,18 +54,22 @@ class CodeInput extends Component{
     //     this.inputRefs[name].focus();
     // }
     componentWillMount(){
-        DeviceEventEmitter.addListener('onKeyPressed', ()=>Alert.alert('sss'))
     }
     componentDidMount(){
         this.inputRefs[0].focus()
+
+        KeyEvent.onKeyDownListener((keyEvent) => {
+          Alert.alert(`onKeyDown keyCode: ${keyEvent.keyCode}`);
+          console.log(`Action: ${keyEvent.action}`);
+        });
     }
 
     componentWillUnmount(){
-        DeviceEventEmitter.removeListener('onKeyPressed', ()=>Alert.alert('sss'))
+        
     }
 
     handleKeyPress(e){
-        Alert.alert(e.nativeEvent.key+'')
+        // Alert.alert(e.nativeEvent.key+'')
     }
     async handleChange(text, name){
 

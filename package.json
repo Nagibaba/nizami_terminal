@@ -13,6 +13,7 @@
     "metro": "^0.43.5",
     "react": "16.4.1",
     "react-native": "^0.55.4",
+    "react-native-keyevent": "^0.1.1",
     "react-navigation": "^2.11.2",
     "uglify-es": "3.2.2"
   },
