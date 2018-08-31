@@ -8,6 +8,7 @@
     "android-linux": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android"
   },
   "dependencies": {
+    "@mdi/font": "^2.6.95",
     "babel-preset-react-native": "^2.1.0",
     "metro": "^0.43.5",
     "react": "16.4.1",

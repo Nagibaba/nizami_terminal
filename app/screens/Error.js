@@ -4,9 +4,6 @@ import React, { Component } from 'react';
 
 import BCard from '../components/BCard'
 
-// remote components
-import CodeInput from '../components/CodeInput';
-
 import {
   Text, 
   View,
@@ -21,7 +18,7 @@ import BButton from '../components/BButton'
 import styles from '../config/styles'
 import colors from '../config/colors'
 
-class EnterCode extends Component {
+class MovieInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,36 +28,32 @@ class EnterCode extends Component {
   }
 
   onPress(){
-    this.props.navigation.navigate('Error')
+    this.props.navigation.goBack()
   }
-
-  
 
   render() {
     return (
       <View style={[styles.container, styles.sidePadding]}>
-        <View style={styles.row1}>
-          <Text style={styles.enterCodeText}>
-            Kodu daxil et
+        
+        <View style={[styles.row3, styles.fullCenter]}>
+          <Image source={require('../images/Group-3.png')} style={styles.alertImg}/>
+        </View>
+
+        <View style={[styles.row1, styles.alignTop]}>
+          <Text style={[styles.alertText]}>
+            Bilet yanlışdır
           </Text>
         </View>
-        <View style={styles.row1}>
-          <CodeInput
-            
 
-          />
-        </View>
-        <View style={styles.row1AlignTop}>
-          <BButton text='YOXLA' onPress={this.onPress} />
-        </View>
         <View style={styles.row1}>
-          <BButton text='SKAN ET' onPress={this.onPress} backgroundColor={colors.orange} color='#ffffff' width={180}/>
+          <BButton text='GERİ QAYIT' onPress={this.onPress} />
         </View>
         <View style={styles.row1} >
           <View style={styles.shadow}>
             <Image 
                 source={require('../images/Nova-logo-clear-manchester.png')}
-                style={{width: 50, height: 20, resizeMode: 'contain'}} />
+            
+            style={{width: 50, height: 20, resizeMode: 'contain'}} />
           </View>
         </View>
       </View>
@@ -68,4 +61,4 @@ class EnterCode extends Component {
   }
 }
 
-export default EnterCode
+export default MovieInfo

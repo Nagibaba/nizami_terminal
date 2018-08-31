@@ -10,6 +10,9 @@ import Login from '../screens/Login'
 import Sessions from '../screens/Sessions'
 import MovieInfo from '../screens/MovieInfo'
 import EnterCode from '../screens/EnterCode'
+import Error from '../screens/Error'
+import SessionContinues from '../screens/SessionContinues'
+import Ticket from '../screens/Ticket'
 
 //config
 import colors from './colors'
@@ -59,10 +62,45 @@ const Routes = createStackNavigator(
 
 	  	}
 	  },
+	  Error: { 
+	  	screen: Error,
+	
+	  	navigationOptions:{
+	  		title: '',
+	  		headerTintColor:colors.darkBlue(),
+	  		headerStyle: {
+	  			display: 'none'
+	  		},
+
+	  	}
+	  },
+	  SessionContinues: { 
+	  	screen: SessionContinues,
+	
+	  	navigationOptions:{
+	  		title: '',
+	  		headerTintColor:colors.darkBlue(),
+	  		headerStyle: {
+	  			display: 'none'
+	  		},
+
+	  	}
+	  },
+
+	  Ticket: { 
+	  	screen: Ticket,
+	
+	  	navigationOptions:{
+	  		headerLeft: (<View/>),
+	  		title: 'BİLET',
+	  		headerTintColor:colors.darkBlue()
+
+	  	}
+	  },
 	  // Profile: { screen: ProfileScreen },
 	},
 	{
-		initialRouteName: 'EnterCode',
+		initialRouteName: 'Ticket',
 		// headerMode: 'none'
 		// transitionConfig: () => ({
 	 //      transitionSpec: {
@@ -77,8 +115,6 @@ const Routes = createStackNavigator(
 	          shadowOpacity: 1, // remove shadow on iOS
 	      },
 	 	  headerTitleStyle: { alignSelf: 'center', flex: 1, textAlign: 'center', color: colors.darkBlue()},
-	      
-	      
 	      headerRight: (headerRight),
 	 	}
 	}

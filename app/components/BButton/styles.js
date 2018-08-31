@@ -3,7 +3,6 @@ import colors from '../../config/colors'
 
 export default StyleSheet.create({
   text: {
-    color: colors.darkBlue(),
     fontSize: 20
   },
   shadow: {
@@ -17,11 +16,11 @@ export default StyleSheet.create({
   button: {
     alignItems: 'center',
     alignSelf: 'center',
-    backgroundColor: colors.white,
+    // backgroundColor: colors.white,
     paddingTop: 25,
     paddingBottom: 25,
     borderRadius: 40,
-    width: 155
+    
 
   
 

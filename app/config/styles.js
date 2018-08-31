@@ -1,6 +1,9 @@
 import {StyleSheet} from 'react-native' 
 import colors from './colors'
 export default StyleSheet.create({
+  testBg: {
+    backgroundColor: '#000000'
+  },
   container: {
     flex: 1,
     flexDirection: 'column',
@@ -26,6 +29,18 @@ export default StyleSheet.create({
     flexDirection: 'row',
     
   },
+  row1AlignTop: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    flexDirection: 'row',
+    
+  },
+  alignTop: {
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    flexDirection: 'row',
+  },
   inputRow:{
     flex: 1,
     flexDirection: 'row', 
@@ -45,13 +60,25 @@ export default StyleSheet.create({
     flexDirection: 'row',
     
   },
+  row3: {
+    flex: 3,
+    flexDirection: 'row',
+    
+  },
+  row4: {
+    flex: 4,
+    flexDirection: 'row',
+    
+  },
   input: {
     flex: 1,
     marginTop: 10,
     backgroundColor: colors.white,
     color: colors.darkBlue(),
     borderRadius: 5,
-    overflow: 'hidden'
+    overflow: 'hidden',
+    alignItems: 'flex-end' ,
+    justifyContent: 'flex-end' ,
   },
   pickerItem: {
     fontWeight: 'bold',
@@ -108,6 +135,15 @@ export default StyleSheet.create({
   },
   itemsBottom:{
     
+  },
+  alertImg:{
+    width: 155,
+    height: 155,
+  },
+  alertText:{
+    fontSize: 24,
+    color: colors.white2,
+
   },
 });
 

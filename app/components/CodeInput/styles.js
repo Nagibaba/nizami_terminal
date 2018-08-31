@@ -17,6 +17,20 @@ export default StyleSheet.create({
     width: 36, 
     fontSize: 24, 
     color: '#ffffff', 
-    backgroundColor: 'rgba(255, 255, 255, .15)' 
+    
+  },
+  inputVisualizer:{
+    position: 'absolute',   
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    backgroundColor: colors.blue,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },  
+  inputVisualizerText:{
+    fontSize: 24, 
+    color: '#ffffff', 
   },
 });

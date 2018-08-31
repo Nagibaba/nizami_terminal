@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, TextInput, Alert } from 'react-native';
+import { View, Text, TextInput, Alert, DeviceEventEmitter } from 'react-native';
 import styles from './styles'
 
 // const BTextInput = (props)=>{
@@ -40,6 +40,7 @@ class CodeInput extends Component{
       this.state = {
         letterCount: 6,
         text: '',
+        textArr: [],
         
       };
       // this.onChangeText = this.onChangeText.bind(this)
@@ -51,28 +52,62 @@ class CodeInput extends Component{
     //     this.inputRefs[name].focus();
     // }
 
+    componentDidMount(){
+        DeviceEventEmitter.addListener('onKeyPressed', ()=> Alert.alert('ppp'))
+        this.inputRefs[0].focus()
+    }
+
+    componentWillUnmount(){
+        DeviceEventEmitter.removeListener('onKeyPressed', ()=> Alert.alert('ppp'))
+    }
+
     handleKeyDown(){
         Alert.alert('salam')
     }
-    handleChange(text, name){
-        const thisInput = parseInt(name)
-        const nextInput = String(thisInput+1)
-        const prevInput = String(thisInput-1)
-        if (text!='') {
-            if(typeof this.inputRefs[nextInput]!='undefined' ){
-                this.inputRefs[nextInput].focus();
-                this.inputRefs[nextInput].value = null
-            }
-        } else {
-            if(typeof this.inputRefs[prevInput]!='undefined' ){
-                this.inputRefs[prevInput].focus();
-                this.inputRefs[prevInput].value = null;
-            }
+    async handleChange(text, name){
+
+        let splitText = text.split('')
+        // Alert.alert(JSON.stringify(splitText))
+        let textArr = [...this.state.textArr]
+        textArr[name] = splitText[0]
+        // Alert.alert(JSON.stringify(textArr), name+'')
+        if(name+1<this.state.letterCount && splitText.length>1) textArr[name+1] = splitText[1]
+        await this.setState({textArr})
+    // Alert.alert(String(this.state.textArr.length))
+    // Alert.alert(JSON.stringify(textArr), name+'')
+        this.inputRefs[textArr.length-1].focus();
+        if(text.length==0 && name!=0) {
+            this.inputRefs[name-1].focus();
+            this.state.textArr.pop()
         }
+        // Alert.alert(String(this.state.textArr.length+1))
+        // const code = this.state.textArr.join('')
+        // 
+        // const thisInput = parseInt(name)
+        // Array.from(this.state.textArr).map((e, i)=>{
+        //     this.inputRefs[i].value = e
+        // })
+        
+        // const nextInput = String(thisInput+1)
+        // const prevInput = String(thisInput-1)
+        // if (text!='') {
+        //     if(typeof this.inputRefs[nextInput]!='undefined' ){
+        //         // this.inputRefs[nextInput].focus();
+        //         // this.inputRefs[nextInput].value = null
+        //     }
+        // } else {
+        //     if(typeof this.inputRefs[prevInput]!='undefined' ){
+        //         // this.inputRefs[prevInput].focus();
+        //         // this.inputRefs[prevInput].value = null;
+        //     }
+        // }
 
     }
-    onFocus(){
-
+    onFocus(id){
+        if(id<this.state.textArr.length-1) {
+            this.setState({textArr: []})
+            this.inputRefs[0].focus()
+        }
     }
     render(){
         const inputs = [];
@@ -82,19 +117,30 @@ class CodeInput extends Component{
             inputs.push(
                 <View style={styles.inputWrapper} key={id}>
                     <TextInput
+                    keyboardType={'numeric'}
                         underlineColorAndroid="transparent"
-                        keyboardType="numeric"
+                        keyboardType="default"
                         style={styles.input}
+                        textAlign={'right'}
                         ref={(input)=>this.inputRefs[id] = input}
-                        maxLength={1}
+                        // maxLength={1}
                         onChangeText={(text)=>this.handleChange(text, id)}
                         blurOnSubmit={true}
-                        onKeyUp={(e)=> { Alert.alert("onKeyPress")} } 
+                        onKeyPress={(e)=> { Alert.alert("onKeyPress")} } 
                         handleKeyPress={this.handleKeyDown}
-                        onFocus={this.onFocus}
-                        // value={props.text}
+                        onFocus={this.onFocus.bind(this, id)}
+                        value={this.state.textArr[id]}
+
+                        renderInputToolbar={() => null}
+                        renderComposer={() => null}
+                        minInputToolbarHeight={0}
                         
                     />
+                    <View style={styles.inputVisualizer} >
+                        <Text style={styles.inputVisualizerText}>
+                            {this.state.textArr[id]}
+                        </Text>
+                     </View>
                 </View>
             );
         }
