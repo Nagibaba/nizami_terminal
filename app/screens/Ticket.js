@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 //components
-import BMovieCard from '../components/BMovieCard'
+import TicketTop from '../components/TicketTop'
 import BButton from '../components/BButton'
 
 // config
@@ -32,30 +32,24 @@ class MovieInfo extends Component {
   }
 
   render() {
+    const movieInfo = {title: 'Enes Batur Hayal Mi Gerçek Mi?', lang: 'Türkçə', date: '22.02.18', hour: '14:00', hall: 'ZAL2', active: false}
     return (
       <View style={styles.container}>
         
         <View style={[styles.row3, styles.fullCenter]}>
-          <Image source={require('../images/Group-4.png')} style={styles.alertImg}/>
-        </View>
-
-        <View style={[styles.row1, styles.alignTop]}>
-          <Text style={[styles.alertText]}>
-            Seans davam edir
-          </Text>
-        </View>
-
-        <View style={styles.row1}>
-          <BButton text='DAVAM ET' onPress={this.onPress} />
-        </View>
-        <View style={styles.row1} >
-          <View style={styles.shadow}>
-            <Image 
-                source={require('../images/Nova-logo-clear-manchester.png')}
-            
-            style={{width: 50, height: 20, resizeMode: 'contain'}} />
+            <TicketTop>
+              {movieInfo}
+            </TicketTop>
+           <View style={[styles.row1, styles.fullCenter]}>
+          
           </View>
         </View>
+
+        <View style={[styles.row2, styles.fullCenter]}>
+          
+        </View>
+
+        
       </View>
     );
   }

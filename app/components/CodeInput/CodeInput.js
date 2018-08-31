@@ -51,18 +51,19 @@ class CodeInput extends Component{
     // onChangeText(name){
     //     this.inputRefs[name].focus();
     // }
-
+    componentWillMount(){
+        DeviceEventEmitter.addListener('onKeyPressed', ()=>Alert.alert('sss'))
+    }
     componentDidMount(){
-        DeviceEventEmitter.addListener('onKeyPressed', ()=> Alert.alert('ppp'))
         this.inputRefs[0].focus()
     }
 
     componentWillUnmount(){
-        DeviceEventEmitter.removeListener('onKeyPressed', ()=> Alert.alert('ppp'))
+        DeviceEventEmitter.removeListener('onKeyPressed', ()=>Alert.alert('sss'))
     }
 
-    handleKeyDown(){
-        Alert.alert('salam')
+    handleKeyPress(e){
+        Alert.alert(e.nativeEvent.key+'')
     }
     async handleChange(text, name){
 
@@ -126,14 +127,13 @@ class CodeInput extends Component{
                         // maxLength={1}
                         onChangeText={(text)=>this.handleChange(text, id)}
                         blurOnSubmit={true}
-                        onKeyPress={(e)=> { Alert.alert("onKeyPress")} } 
-                        handleKeyPress={this.handleKeyDown}
+                        onKeyPress={this.handleKeyPress} 
+                        onKeyDown={(e)=> Alert.alert("onKeyDown") } 
+                        onSubmitEditing={()=>Alert.alert('Enter')}
                         onFocus={this.onFocus.bind(this, id)}
                         value={this.state.textArr[id]}
 
-                        renderInputToolbar={() => null}
-                        renderComposer={() => null}
-                        minInputToolbarHeight={0}
+                        
                         
                     />
                     <View style={styles.inputVisualizer} >

@@ -100,7 +100,7 @@ const Routes = createStackNavigator(
 	  // Profile: { screen: ProfileScreen },
 	},
 	{
-		initialRouteName: 'Ticket',
+		initialRouteName: 'EnterCode',
 		// headerMode: 'none'
 		// transitionConfig: () => ({
 	 //      transitionSpec: {
