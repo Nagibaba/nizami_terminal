@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import BText from '../BText'
+import GText from '../GText'
 import styles from './styles'
 
-export default class TicketTop extends Component {
+export default class BCard extends Component {
 	constructor(props) {
 	  super(props);
 	
@@ -15,42 +15,79 @@ export default class TicketTop extends Component {
 	}
   render() {
   	const children = this.props.children
+  	const active = children.active?styles.active:null
     return (
-    	
-      <View style={[styles.card]}>
-      	<View style={styles.col3}>
-      		<View style={styles.row3}>
-      			<BText style={styles.title}>
-      				{children.title}
+    	<View style={styles.wrapper}>
+	      <View style={[styles.card, active]}>
+	      	<View style={styles.col3}>
+	      		<View style={styles.row3}>
+	      			<GText style={styles.title}>
+	      				{children.title}
 
-      			</BText>
-      		</View>
-      		<View style={styles.row1}>
-      			<BText style={styles.lang}>
-      				Dil: {children.lang}
-      			</BText>
-      		</View>
-      		
-      	</View>
-      	<View style={styles.col1}>
-      		<View style={styles.row1} >
-	      		<BText style={styles.date}>
-	      			{children.date}
-	      		</BText>
+	      			</GText>
+	      		</View>
+	      		<View style={styles.row1}>
+	      			<GText style={styles.lang}>
+	      				Dil: {children.lang}
+	      			</GText>
+	      		</View>
+	      		
 	      	</View>
-	      	<View style={[styles.row2, styles.alignCenter]} >
-	      		<BText style={styles.hour}>
-	      			{children.hour}
-	      		</BText>
+	      	<View style={styles.col1}>
+	      		<View style={styles.row1} >
+		      		<GText style={styles.date}>
+		      			{children.date}
+		      		</GText>
+		      	</View>
+		      	<View style={[styles.row2, styles.alignCenter]} >
+		      		<GText style={styles.hour}>
+		      			{children.hour}
+		      		</GText>
+		      	</View>
+		      	<View style={[styles.row1, styles.alignEnd]} >
+		      		<GText style={styles.hall}>
+		      			{children.hall}
+		      		</GText>
+		      	</View>
 	      	</View>
-	      	<View style={[styles.row1, styles.alignEnd]} >
-	      		<BText style={styles.hall}>
-	      			{children.hall}
-	      		</BText>
+	      </View>
+
+	      <View style={[styles.card, active]}>
+	      	<View style={styles.col3}>
+	      		<View style={styles.row1}>
+	      			<Text style={styles.name}>
+	      				{children.name}
+
+	      			</Text>
+	      		</View>
+	      		<View style={styles.row1}>
+	      			<Text style={styles.lang}>
+	      				{children.mobile}
+	      			</Text>
+	      		</View>
+	      		<View style={styles.row1}>
+	      			<Text style={styles.lang}>
+	      				{children.mobile}
+	      			</Text>
+	      		</View>
 	      	</View>
-      	</View>
-      </View>
-	   
+	      	<View style={styles.col1}>
+	      		<View style={[styles.row1, styles.stickCBottom]} >
+		      		
+		      		<View style={styles.ticket}>
+		      			<Text style={styles.ticketText}>
+		      				BİLET
+		      			</Text>
+		      			<Text style={styles.ticketCount}>
+		      				{children.ticketCount}
+		      			</Text>
+		      		</View>
+		      	
+		      	</View>
+	      	</View>
+	      </View>
+
+	    </View>
     )
   }
 }

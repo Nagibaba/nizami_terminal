@@ -40,9 +40,9 @@ class Sessions extends Component {
       <View style={styles.container}>
       	<ListView
       		style={ styles.sessionList }
-			dataSource={this.state.dataSource}
-			renderRow={(rowData) => <BCard navigation={this.props.navigation}>{rowData}</BCard>}
-		/>
+    			dataSource={this.state.dataSource}
+    			renderRow={(rowData) => <BCard navigation={this.props.navigation}>{rowData}</BCard>}
+    		/>
       </View>
     );
   }

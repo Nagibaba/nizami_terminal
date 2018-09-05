@@ -145,5 +145,11 @@ export default StyleSheet.create({
     color: colors.white2,
 
   },
+
+  ticketsWrapper:{
+    padding: 15,
+  },
+  
+
 });
 

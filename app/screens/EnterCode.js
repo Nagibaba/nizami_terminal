@@ -45,10 +45,7 @@ class EnterCode extends Component {
           </Text>
         </View>
         <View style={styles.row1}>
-          <CodeInput
-            
-
-          />
+          <TextInput />
         </View>
         <View style={styles.row1AlignTop}>
           <BButton text='YOXLA' onPress={this.onPress} />

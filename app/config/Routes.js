@@ -100,7 +100,7 @@ const Routes = createStackNavigator(
 	  // Profile: { screen: ProfileScreen },
 	},
 	{
-		initialRouteName: 'EnterCode',
+		initialRouteName: 'Ticket',
 		// headerMode: 'none'
 		// transitionConfig: () => ({
 	 //      transitionSpec: {
@@ -113,6 +113,8 @@ const Routes = createStackNavigator(
 	 	  headerStyle: {
 	          elevation: 10, // remove shadow on Android
 	          shadowOpacity: 1, // remove shadow on iOS
+	          borderBottomWidth: 7,
+	          borderBottomColor: colors.gray
 	      },
 	 	  headerTitleStyle: { alignSelf: 'center', flex: 1, textAlign: 'center', color: colors.darkBlue()},
 	      headerRight: (headerRight),
