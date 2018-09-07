@@ -16,13 +16,17 @@ export default class TicketItem extends Component {
   render() {
   	const children = this.props.children
   	let indexWrapper, indexText, ticketText, icon
-  	switch(children.status){
-  		case 'readyToPrint':
-  			
+  	// switch(children.status){
+  	// 	case 'readyToPrint':
+  	// 		indexWrapper = {backgroundColor: '#000000'};
+  	// 		break;
 
-  	}
+  	// 	default:
+
+
+  	// }
     return (
-    	<TouchableOpacity style={[styles.ticket, status]} onPress={this.onPress} >
+    	<TouchableOpacity style={[styles.ticket]} onPress={this.onPress} >
 			<View style={[styles.col1half, styles.alignCenter]}>
 				<Text style={styles.ticketText}>
 					{parseInt(this.props.index)+1}

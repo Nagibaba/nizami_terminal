@@ -8,7 +8,8 @@ import {
   Text, 
   View,
   Image,
-  ListView
+  ListView,
+  Alert
 } from 'react-native';
 
 //components
@@ -18,6 +19,11 @@ import BButton from '../components/BButton'
 // config
 import styles from '../config/styles'
 import colors from '../config/colors'
+
+
+// //modules
+import {NativeModules} from 'react-native';
+
 
 class MovieInfo extends Component {
   constructor(props) {
@@ -38,6 +44,10 @@ class MovieInfo extends Component {
       dataSource: ds.cloneWithRows(ticketsData),
     }
     this.onPress = this.onPress.bind(this)
+    const ToastExample = NativeModules.ToastExample
+    // console.log(JSON.stringify(ToastExample))
+    Alert.alert('assa')
+    ToastExample.show('Awesome', ToastExample.SHORT);
   }
 
   onPress(){

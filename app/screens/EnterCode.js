@@ -7,10 +7,14 @@ import BCard from '../components/BCard'
 // remote components
 import CodeInput from '../components/CodeInput';
 
+
+// import KeyEvent from 'react-native-keyevent';
+
 import {
   Text, 
   View,
-  Image
+  Image,
+  TextInput
 } from 'react-native';
 
 //components
@@ -28,6 +32,12 @@ class EnterCode extends Component {
       username: 'Nagibaba',
     }
     this.onPress = this.onPress.bind(this)
+  }
+
+  componentDidMount(){
+    // KeyEvent.onKeyUpListener((keyEvent) => {
+    //       Alert.alert(keyEvent.keyCode+'')
+    // })
   }
 
   onPress(){
