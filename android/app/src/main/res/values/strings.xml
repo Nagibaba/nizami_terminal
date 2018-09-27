@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">nizamiRN</string>
+
+    <string name="service_bind_success">AIDL service bind success</string>
+    <string name="service_bind_fail">AIDL service bind fail</string>
 </resources>

@@ -39,9 +39,8 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>NSAppTransportSecurity</key>
-	<!--See http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/ -->
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
@@ -52,5 +51,73 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Anglecia-Pro-Display.otf</string>
+		<string>Aileron-Black.otf</string>
+		<string>Aileron-BlackItalic.otf</string>
+		<string>Aileron-Bold.otf</string>
+		<string>Aileron-BoldItalic.otf</string>
+		<string>Aileron-Heavy.otf</string>
+		<string>Aileron-HeavyItalic.otf</string>
+		<string>Aileron-Italic.otf</string>
+		<string>Aileron-Light.otf</string>
+		<string>Aileron-LightItalic.otf</string>
+		<string>Aileron-Regular.otf</string>
+		<string>Aileron-SemiBold.otf</string>
+		<string>Aileron-SemiBoldItalic.otf</string>
+		<string>Aileron-Thin.otf</string>
+		<string>Aileron-ThinItalic.otf</string>
+		<string>Aileron-UltraLight.otf</string>
+		<string>Aileron-UltraLightItalic.otf</string>
+		<string>Gotham Condensed Black.otf</string>
+		<string>Gotham Condensed Bold.otf</string>
+		<string>Gotham Condensed Book.otf</string>
+		<string>Gotham Condensed Light.otf</string>
+		<string>Gotham Condensed Medium.otf</string>
+		<string>Gotham Condensed Thin.otf</string>
+		<string>Gotham Condensed Ultra.otf</string>
+		<string>Gotham Condensed XLight.otf</string>
+		<string>Gotham XNarrow Black.otf</string>
+		<string>Gotham XNarrow Bold.otf</string>
+		<string>Gotham XNarrow Book.otf</string>
+		<string>Gotham XNarrow Light.otf</string>
+		<string>Gotham XNarrow Medium.otf</string>
+		<string>Gotham XNarrow Thin.otf</string>
+		<string>Gotham XNarrow Ultra.otf</string>
+		<string>Gotham XNarrow XLight.otf</string>
+		<string>GothamNarrow-Bold.otf</string>
+		<string>GothamNarrow-Book.otf</string>
+		<string>GothamNarrow-Light.otf</string>
+		<string>GothamNarrow-Thin.otf</string>
+		<string>Gotham Narrow Black.otf</string>
+		<string>Gotham Narrow Bold.otf</string>
+		<string>Gotham Narrow Book.otf</string>
+		<string>Gotham Narrow Light.otf</string>
+		<string>Gotham Narrow Medium.otf</string>
+		<string>Gotham Narrow Thin.otf</string>
+		<string>Gotham Narrow Ultra.otf</string>
+		<string>Gotham Narrow XLight.otf</string>
+		<string>Gotham Black.otf</string>
+		<string>Gotham Bold.otf</string>
+		<string>Gotham Book.otf</string>
+		<string>Gotham Light.otf</string>
+		<string>Gotham Medium.otf</string>
+		<string>Gotham Thin.otf</string>
+		<string>Gotham Ultra.otf</string>
+		<string>Gotham XLight.otf</string>
+		<string>ArialNU.otf</string>
+		<string>Antonio-Bold.otf</string>
+		<string>Antonio-Light.otf</string>
+		<string>Antonio-Regular.otf</string>
+		<string>Antonio_bold.otf</string>
+		<string>Antonio_light.otf</string>
+		<string>Antonio.otf</string>
+		<string>DINPro-Bold.ttf</string>
+		<string>DINPro-Medium.ttf</string>
+		<string>DINPro.ttf</string>
+		<string>DINPro_bold.ttf</string>
+		<string>DINPro_medium.ttf</string>
+	</array>
 </dict>
 </plist>

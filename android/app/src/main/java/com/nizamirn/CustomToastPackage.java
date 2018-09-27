@@ -8,6 +8,7 @@ import com.facebook.react.uimanager.ViewManager;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import android.util.Log;
 
 public class CustomToastPackage implements ReactPackage {
 
@@ -25,5 +26,12 @@ public class CustomToastPackage implements ReactPackage {
 
     return modules;
   }
+
+  // @Override
+  // public void onCreate() {
+  //   super.onCreate();
+  //   // SoLoader.init(this, /* native exopackage */ false);
+  //   Log.e("client", "CustomToastPackage started");
+  // }
 
 }

@@ -97,12 +97,17 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
+    lintOptions {
+      abortOnError false
+    }
     defaultConfig {
         applicationId "com.nizamirn"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -138,9 +143,14 @@ android {
 
 dependencies {
     compile project(':react-native-keyevent')
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // compile project(':react-native-pda-scan-library')
+    // compile project(':react-native-keyevent')
+    // compile fileTree(include: ['*.jar'], dir: 'libs')
     compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.facebook.react:react-native:+'
+    compile files('libs/core.jar')
+    
     // From node_modules
 }
 

@@ -1,9 +1,11 @@
+// ******** not used ********** // 
+
 import React, { Component } from 'react';
 import { View, Text, TextInput, Alert, DeviceEventEmitter } from 'react-native';
 import styles from './styles'
 import buttons from '../../config/buttons'
 
-import KeyEvent from 'react-native-keyevent';
+// import KeyEvent from 'react-native-keyevent';
 
 // const BTextInput = (props)=>{
 //     const inputRefs = []
@@ -56,22 +58,22 @@ class CodeInput extends Component{
     //     this.inputRefs[name].focus();
     // }
     componentWillMount(){
-        KeyEvent.onKeyUpListener((keyEvent) => {
-          switch(keyEvent.keyCode){
-            case buttons.backspace:
-                // Alert.alert(String(this.state.textArr[this.state.focusedInput]==''))
-                // console.log(this.state.textArr[this.state.focusedInput]+'aaa')
+        // KeyEvent.onKeyUpListener((keyEvent) => {
+          // switch(keyEvent.keyCode){
+          //   case buttons.backspace:
+          //       // Alert.alert(String(this.state.textArr[this.state.focusedInput]==''))
+          //       // console.log(this.state.textArr[this.state.focusedInput]+'aaa')
                 
-                this.inputRefs[0].focus()
-                this.setState({textArr:[]})
-                break;
+          //       this.inputRefs[0].focus()
+          //       this.setState({textArr:[]})
+          //       break;
 
-            case buttons.enter:
-                this.props.onPress()
+          //   case buttons.enter:
+          //       this.props.onPress()
 
-          }
+          // }
           // Alert.alert(`Action: ${keyEvent.action}`);
-        });
+        // });
     }
     componentDidMount(){
         this.inputRefs[0].focus()
@@ -84,7 +86,7 @@ class CodeInput extends Component{
         // KeyEvent.removeKeyDownListener();
 
          // if you are listening to keyUp
-        KeyEvent.removeKeyUpListener();
+        // KeyEvent.removeKeyUpListener();
 
          // if you are listening to keyMultiple
         // KeyEvent.removeKeyMultipleListener();

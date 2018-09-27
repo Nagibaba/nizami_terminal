@@ -3,17 +3,25 @@
 import React, { Component } from 'react';
 
 import {
-  Text, 
   View,
   Picker,
   Image,
   Dimensions,
   TextInput,
   TouchableOpacity,
+  Alert
 } from 'react-native';
+
+// components
 import BText from '../components/BText'
 import BButton from '../components/BButton'
+import Text from '../components/Text'
+
+//config
 import styles from '../config/styles'
+
+//modules 
+import KeyEvent from 'react-native-keyevent';
 
 const width = Dimensions.get('window').width
 const height = Dimensions.get('window').height
@@ -24,14 +32,40 @@ class Login extends Component {
     super(props);
   
     this.state = {
-      username: 'Nagibaba'
+      username: 'nagibaba'
     }
 
     this.onPress = this.onPress.bind(this)
+    this.onPickerChanged = this.onPickerChanged.bind(this)
+  }
+  componentDidMount(){
+    this.refs.password.focus()
+
+    KeyEvent.onKeyUpListener((keyEvent) => {
+          if(keyEvent.keyCode==66){
+            // Ent
+            this.onPress()
+          }
+    })
   }
 
+  componentWillUnmount() {
+    // if you are listening to keyDown
+    // KeyEvent.removeKeyDownListener();
+ 
+     // if you are listening to keyUp
+    KeyEvent.removeKeyUpListener();
+ 
+     // if you are listening to keyMultiple
+    // KeyEvent.removeKeyMultipleListener();
+  }
+  
   onPress(){
     this.props.navigation.navigate('Sessions')
+  }
+  onPickerChanged(username){
+    this.setState({ username })
+    this.refs.password.focus()
   }
 
   render() {
@@ -50,10 +84,10 @@ class Login extends Component {
             <Picker
 
               showIcon={true}
-              style={styles.input}
+              style={[styles.input, styles.picker]}
               itemStyle={styles.pickerItem}
               selectedValue={this.state.username}
-              onValueChange={itemValue => this.setState({ username: itemValue })}>
+              onValueChange={this.onPickerChanged}>
               <Picker.Item label="Nagibaba" value="nagibaba" />
               <Picker.Item label="JavaScript" value="js" />
               <Picker.Item label="Python" value="python" />
@@ -72,8 +106,9 @@ class Login extends Component {
                 style={styles.icon} 
             />
             <TextInput
+              ref = "password"
               secureTextEntry={true}
-              style={styles.input}
+              style={[styles.input, styles.textInput]}
               onChangeText={(text) => this.setState({text})}
               value={this.state.text}
               underlineColorAndroid='transparent'

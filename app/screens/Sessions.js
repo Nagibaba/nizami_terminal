@@ -5,13 +5,22 @@ import React, { Component } from 'react';
 import BCard from '../components/BCard'
 
 import {
-  Text, 
   View,
-  ListView
+  ListView,
+  // Dimensions,
+  // Alert
 } from 'react-native';
+
+//components
 import BText from '../components/BText'
+import Text from '../components/Text'
+
+
+//config
 import styles from '../config/styles'
 import colors from '../config/colors'
+
+let scrollYPos = 0;
 
 class Sessions extends Component {
 	
@@ -33,12 +42,26 @@ class Sessions extends Component {
     this.state = {
       username: 'Nagibaba',
       dataSource: ds.cloneWithRows(moviesData),
+      // screenHeight: Dimensions.get('window').height,      
+      // screenWidth: Dimensions.get('window').width,
     }
   }
+
+  // componentDidMount(){
+  //   this.scroller.scrollToEnd({animated: true})
+  // }
+
+  scrollToC = () => {
+    scrollYPos = this.state.screenHeight * 2;
+    // Alert.alert(scrollYPos+'')
+    
+  };
+
   render() {
     return (
       <View style={styles.container}>
       	<ListView
+          ref={scroller=>this.scroller=scroller}
       		style={ styles.sessionList }
     			dataSource={this.state.dataSource}
     			renderRow={(rowData) => <BCard navigation={this.props.navigation}>{rowData}</BCard>}

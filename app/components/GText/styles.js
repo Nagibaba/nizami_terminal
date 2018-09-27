@@ -4,6 +4,6 @@ import colors from '../../config/colors'
 export default StyleSheet.create({
   text: {
     color: colors.green,
-    fontSize: 20
+    fontSize: 20,
   },
 });

@@ -1,5 +1,7 @@
 import {StyleSheet} from 'react-native' 
 import colors from './colors'
+import defaults from './defaults'
+
 export default StyleSheet.create({
   testBg: {
     backgroundColor: '#000000'
@@ -71,8 +73,9 @@ export default StyleSheet.create({
     
   },
   input: {
+    
     flex: 1,
-    marginTop: 10,
+    // marginTop: 10,
     backgroundColor: colors.white,
     color: colors.darkBlue(),
     borderRadius: 5,
@@ -80,9 +83,17 @@ export default StyleSheet.create({
     alignItems: 'flex-end' ,
     justifyContent: 'flex-end' ,
   },
+  textInput:{
+    fontSize: 20,
+    fontFamily: defaults.fontFamily,
+  },
+  picker:{
+    transform: [{scale: 1.1}]
+  },
   pickerItem: {
     fontWeight: 'bold',
     fontSize: 20,
+    fontFamily: defaults.fontFamily,
     color: 'red',
     borderRadius: 5,
 
@@ -150,6 +161,20 @@ export default StyleSheet.create({
     padding: 15,
   },
   
+  codeInputWrapper:{
+    borderWidth: 2,
+    borderColor: 'white',
+    borderRadius: 5,
+    flex: 1,
+    height: 50
+  },
+  codeInput:{
+    flex: 1,
+    fontSize: 24,
+    fontFamily: defaults.fontFamily,
+    color: 'white',
+    textAlign: 'center'
+  },
 
 });
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableHighlight } from 'react-native';
+import { View, TouchableHighlight } from 'react-native';
 import BText from '../BText'
 import styles from './styles'
 

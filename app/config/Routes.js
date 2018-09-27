@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, Image, View, Text, Alert  } from 'react-native';
+import { 
+	TouchableOpacity, 
+	Image, 
+	View, 
+	Text,
+	Animated,
+  	Easing,
+	Alert 
+} from 'react-native';
+
 import {
   createStackNavigator,
   SafeAreaView,
+
 } from 'react-navigation';
 
 //screens
@@ -20,12 +30,57 @@ import colors from './colors'
 const headerRight = ( 
 	<TouchableOpacity 
 		onPress={()=>Alert.alert('Çıxış etdiniz')}
-		style={{marginRight: 15}}>
+		style={{padding: 15}}>
   		<Image  source={require('../images/power_settings_new.png')} 
   				style={{width: 20, height: 20, resizeMode: 'contain'}}	/>
   	</TouchableOpacity>
 )
+const transitionConfig = () => {
+  return {
+    transitionSpec: {
+      duration: 750,
+      easing: Easing.out(Easing.poly(4)),
+      timing: Animated.timing,
+      useNativeDriver: true,
+    },
+    screenInterpolator: sceneProps => {
+      const { position, layout, scene, index, scenes } = sceneProps
+      const toIndex = index
+      const thisSceneIndex = scene.index
+      const height = layout.initHeight
+      const width = layout.initWidth
 
+      const translateX = position.interpolate({
+        inputRange: [thisSceneIndex - 1, thisSceneIndex, thisSceneIndex + 1],
+        outputRange: [width, 0, 0]
+      })
+
+      // Since we want the card to take the same amount of time 
+      // to animate downwards no matter if it's 3rd on the stack 
+      // or 53rd, we interpolate over the entire range 
+      // from 0 - thisSceneIndex
+      const translateY = position.interpolate({
+        inputRange: [0, thisSceneIndex],
+        outputRange: [height, 0]
+      })
+
+      const slideFromRight = { transform: [{ translateX }] }
+      const slideFromBottom = { transform: [{ translateY }] }
+
+      // Find the top screen on the stack
+      const lastSceneIndex = scenes[scenes.length - 1].index
+
+      // Test whether we're skipping back more than one screen
+      if (lastSceneIndex - toIndex > 1) {
+        // Do not transoform the screen being navigated to
+        if (scene.index === toIndex) return
+        return slideFromBottom
+      }
+
+      return slideFromRight
+    },
+  }
+}
 const Routes = createStackNavigator(
 	{
 	  Login: { 
@@ -100,7 +155,8 @@ const Routes = createStackNavigator(
 	  // Profile: { screen: ProfileScreen },
 	},
 	{
-		initialRouteName: 'Ticket',
+		initialRouteName: 'EnterCode',
+		transitionConfig,
 		// headerMode: 'none'
 		// transitionConfig: () => ({
 	 //      transitionSpec: {
@@ -121,5 +177,7 @@ const Routes = createStackNavigator(
 	 	}
 	}
 );
+
+
 
 export default Routes;

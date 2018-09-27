@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -38,6 +37,71 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		14591EB7BE1F405391989CCB /* Anglecia-Pro-Display.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC2ED5EDFE5D4E26BC9C60AF /* Anglecia-Pro-Display.otf */; };
+		B6168E8D269346B589168365 /* Aileron-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF299560EBF74868ACF57926 /* Aileron-Black.otf */; };
+		33B232B0670D4A4DA35831FC /* Aileron-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62C650284CDD44748D717100 /* Aileron-BlackItalic.otf */; };
+		C5BC3A1CFDA0419BAF8627EC /* Aileron-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE09C25A487C433386D2120F /* Aileron-Bold.otf */; };
+		3FD3EAA9C65842458C11F27E /* Aileron-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90C54C273C5E4A51AF421F13 /* Aileron-BoldItalic.otf */; };
+		DB45D31644FF4DE5B111FBAE /* Aileron-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8975C075A4EC4291AD1D54BF /* Aileron-Heavy.otf */; };
+		DCB9B15D943A42ECB7257CDA /* Aileron-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66331476DCD04EE6B0E86993 /* Aileron-HeavyItalic.otf */; };
+		EB7C6BF7A89F4ADF93446F9F /* Aileron-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10480E554E364E879729B54C /* Aileron-Italic.otf */; };
+		6A648E887C3D46648DFF17EA /* Aileron-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 478EC310C3364930B189A23E /* Aileron-Light.otf */; };
+		30ED1596DA7C4F58BE3722D7 /* Aileron-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB70C3119B9542E294B41B29 /* Aileron-LightItalic.otf */; };
+		434DD930A0FF4771BA8886F7 /* Aileron-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC0E7C309E764B9185FC8C08 /* Aileron-Regular.otf */; };
+		63A362A5E1C147D3A2478814 /* Aileron-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 628D7E7E04654F9DB66743CC /* Aileron-SemiBold.otf */; };
+		2A87C907FED940EBA1D6B77A /* Aileron-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50F42ABFAC3A45088313F1C2 /* Aileron-SemiBoldItalic.otf */; };
+		3F0457A2B3C146A79966FC07 /* Aileron-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF4F184EDF1E468F979DB3BC /* Aileron-Thin.otf */; };
+		F75D280249A9487091F15756 /* Aileron-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD6D3AEADF4A4CA8B6A75A44 /* Aileron-ThinItalic.otf */; };
+		EE5321EDCE834A6F89AD1B7F /* Aileron-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F7DE3244CD34E2AA189EDF2 /* Aileron-UltraLight.otf */; };
+		00168915BDDA4915B43D3496 /* Aileron-UltraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D30D7945471149C59FDA334D /* Aileron-UltraLightItalic.otf */; };
+		5F3E39FA1A7F4B6FB63D0E5D /* Gotham Condensed Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72F73E56D29A46CC832FC506 /* Gotham Condensed Black.otf */; };
+		FC0C39A777C240D5AA117A41 /* Gotham Condensed Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0A12AFEEEB14972933643E3 /* Gotham Condensed Bold.otf */; };
+		7E96009041BE421F9D5B312A /* Gotham Condensed Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB74E0B896384015972B3104 /* Gotham Condensed Book.otf */; };
+		076363D538854DF9AB220E55 /* Gotham Condensed Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B3A6BCC128124A15B5D92F6A /* Gotham Condensed Light.otf */; };
+		47FACD2DF6EA4B74BFCD5C39 /* Gotham Condensed Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9028C0B99C94DEBB38856A7 /* Gotham Condensed Medium.otf */; };
+		94309ED1FFBD4CA6ACB561D4 /* Gotham Condensed Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B88086B143B43F0A5D0A0B4 /* Gotham Condensed Thin.otf */; };
+		63D106916ED04F398D713564 /* Gotham Condensed Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B4B25B6B9143C39790A1CF /* Gotham Condensed Ultra.otf */; };
+		DC7EE7EF72544BD081BEF1AC /* Gotham Condensed XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 11791A49E6C5460DA75C51F9 /* Gotham Condensed XLight.otf */; };
+		59FFD203A2B8435EAEE974B5 /* Gotham XNarrow Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 061EDE4565B247CD9048050C /* Gotham XNarrow Black.otf */; };
+		5B33E858E49A405EAD1B2F55 /* Gotham XNarrow Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC5F620EF90D4380894317BF /* Gotham XNarrow Bold.otf */; };
+		AA44756EBA4B4C5E96C17675 /* Gotham XNarrow Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCAAF78C1A8D4AECBEF4C8C0 /* Gotham XNarrow Book.otf */; };
+		C7A6141161044C44BDCEF826 /* Gotham XNarrow Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84C1F5A420704FF58A5E9395 /* Gotham XNarrow Light.otf */; };
+		ED5A9B2F623F40C3A8A6871B /* Gotham XNarrow Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8039649063CF4AA6ABF2ED7C /* Gotham XNarrow Medium.otf */; };
+		928499249F994518B1F351D0 /* Gotham XNarrow Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C26C0B8B01D947E48C883D8A /* Gotham XNarrow Thin.otf */; };
+		22388F87CBC54236A2745BC3 /* Gotham XNarrow Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = 639D4AACA6924725AF4582CE /* Gotham XNarrow Ultra.otf */; };
+		E42AD18DD1B8481EAB19E8C7 /* Gotham XNarrow XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40A09003A2374FB39276E56B /* Gotham XNarrow XLight.otf */; };
+		A14D7534DB354E91830C3D27 /* GothamNarrow-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0AC1949AAAD49FD8934A261 /* GothamNarrow-Bold.otf */; };
+		B897F358A3084595B03BA8C1 /* GothamNarrow-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43802F6EA6DD4670842B6CD6 /* GothamNarrow-Book.otf */; };
+		1DDBCF123D554D13809550BF /* GothamNarrow-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3D5B1677D24490C939B5924 /* GothamNarrow-Light.otf */; };
+		9BD76E98ED2E4DD9BD2985C0 /* GothamNarrow-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B51D18C4BDEF4F8AABE19816 /* GothamNarrow-Thin.otf */; };
+		D0473686605C4026A532F838 /* Gotham Narrow Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC131F1B6B7E4F5C9F0F1921 /* Gotham Narrow Black.otf */; };
+		3ECB78E52D884C49830E6CCD /* Gotham Narrow Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9703688510F34858B551DE16 /* Gotham Narrow Bold.otf */; };
+		7F134CDF131D4AE29F3E1229 /* Gotham Narrow Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCD25155673A4B45988E0272 /* Gotham Narrow Book.otf */; };
+		D736A42C0C134920B894A1D3 /* Gotham Narrow Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D1FD4EFDDF64A87BF7A3FA3 /* Gotham Narrow Light.otf */; };
+		AE26178364A74EBA8983D180 /* Gotham Narrow Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5673034469654A9DB40D18F4 /* Gotham Narrow Medium.otf */; };
+		E28F13E5590E4B0D89156656 /* Gotham Narrow Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2681EFE6BCF40C08FE7AEFD /* Gotham Narrow Thin.otf */; };
+		5AB4652777AC430C9BD9F5D1 /* Gotham Narrow Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89E2C70A78654C6AA76BA376 /* Gotham Narrow Ultra.otf */; };
+		D0E80041086E4ACE8EB64B81 /* Gotham Narrow XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 738811D6F7A74F4CA5731ACF /* Gotham Narrow XLight.otf */; };
+		F62BACCFDA574B938A3559F8 /* Gotham Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC6F72E2CF7B411380A42D21 /* Gotham Black.otf */; };
+		46A722D179C4432DBECC1D91 /* Gotham Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F627363BA9943FDB416B969 /* Gotham Bold.otf */; };
+		9AFD5EE3158249BE921DE3D2 /* Gotham Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 045DFF4011F14904B986B1B4 /* Gotham Book.otf */; };
+		B946C3B91CC043CFB0B204D5 /* Gotham Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 844DDDFF860847D487FCABE6 /* Gotham Light.otf */; };
+		756587BC706648519A2F0BC1 /* Gotham Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CD7430E084D4A5AB7C22D72 /* Gotham Medium.otf */; };
+		51BD39EA9D6B482CA3ED97EE /* Gotham Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8A3ADB797A141C7820CF623 /* Gotham Thin.otf */; };
+		ECDD9785FE8144528789C470 /* Gotham Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3326376E36D9406FB5E63E52 /* Gotham Ultra.otf */; };
+		4667A5FA0DBB4BF8975FAED1 /* Gotham XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = E41509090CBC4A8F99E5862C /* Gotham XLight.otf */; };
+		E478E7442C864A7483F246BE /* ArialNU.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECECAE7981D14E1590610E1B /* ArialNU.otf */; };
+		655D650A96C94E83B88ACA4E /* Antonio-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E8BD5E4E82D47AAA7439B11 /* Antonio-Bold.otf */; };
+		C23444F19E37494889002BB8 /* Antonio-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73B2BE7ED0AA4EEEB78CA3CD /* Antonio-Light.otf */; };
+		1098E11A7CEB436BA01CE1AE /* Antonio-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54C6F071DAE04334A676BFB3 /* Antonio-Regular.otf */; };
+		48ABB28B289F4AB4A8E969BA /* Antonio_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 421274D8673643789E49C5DC /* Antonio_bold.otf */; };
+		B9090A25BF0E48C6AB67CCB2 /* Antonio_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FD863A9F2A406CB394F84B /* Antonio_light.otf */; };
+		435346E02C5C49B29A0FFED1 /* Antonio.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8CAC7740C1C4D39B6AF0402 /* Antonio.otf */; };
+		3C2F2CF4D2C74EC2A206F398 /* DINPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB150880B75A4EE4956E903A /* DINPro-Bold.ttf */; };
+		DB7E31A3B0844EBE9B24443B /* DINPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8524BD934FDA4C74B277D9CD /* DINPro-Medium.ttf */; };
+		756B78EA6C76484AABC564ED /* DINPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F889285881849B39AD35DE3 /* DINPro.ttf */; };
+		9FD41D0F260248ED80068FFB /* DINPro_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2418B09A2D2409184A19E27 /* DINPro_bold.ttf */; };
+		1852581C1AC74BEAAC3533F1 /* DINPro_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E5C234D93AD45C58FD6111A /* DINPro_medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -343,6 +407,71 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		EC2ED5EDFE5D4E26BC9C60AF /* Anglecia-Pro-Display.otf */ = {isa = PBXFileReference; name = "Anglecia-Pro-Display.otf"; path = "../app/fonts/Anglecia-Pro-Display.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF299560EBF74868ACF57926 /* Aileron-Black.otf */ = {isa = PBXFileReference; name = "Aileron-Black.otf"; path = "../app/fonts/Gotham/aileron/Aileron-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		62C650284CDD44748D717100 /* Aileron-BlackItalic.otf */ = {isa = PBXFileReference; name = "Aileron-BlackItalic.otf"; path = "../app/fonts/Gotham/aileron/Aileron-BlackItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE09C25A487C433386D2120F /* Aileron-Bold.otf */ = {isa = PBXFileReference; name = "Aileron-Bold.otf"; path = "../app/fonts/Gotham/aileron/Aileron-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		90C54C273C5E4A51AF421F13 /* Aileron-BoldItalic.otf */ = {isa = PBXFileReference; name = "Aileron-BoldItalic.otf"; path = "../app/fonts/Gotham/aileron/Aileron-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8975C075A4EC4291AD1D54BF /* Aileron-Heavy.otf */ = {isa = PBXFileReference; name = "Aileron-Heavy.otf"; path = "../app/fonts/Gotham/aileron/Aileron-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		66331476DCD04EE6B0E86993 /* Aileron-HeavyItalic.otf */ = {isa = PBXFileReference; name = "Aileron-HeavyItalic.otf"; path = "../app/fonts/Gotham/aileron/Aileron-HeavyItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		10480E554E364E879729B54C /* Aileron-Italic.otf */ = {isa = PBXFileReference; name = "Aileron-Italic.otf"; path = "../app/fonts/Gotham/aileron/Aileron-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		478EC310C3364930B189A23E /* Aileron-Light.otf */ = {isa = PBXFileReference; name = "Aileron-Light.otf"; path = "../app/fonts/Gotham/aileron/Aileron-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB70C3119B9542E294B41B29 /* Aileron-LightItalic.otf */ = {isa = PBXFileReference; name = "Aileron-LightItalic.otf"; path = "../app/fonts/Gotham/aileron/Aileron-LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC0E7C309E764B9185FC8C08 /* Aileron-Regular.otf */ = {isa = PBXFileReference; name = "Aileron-Regular.otf"; path = "../app/fonts/Gotham/aileron/Aileron-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		628D7E7E04654F9DB66743CC /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; name = "Aileron-SemiBold.otf"; path = "../app/fonts/Gotham/aileron/Aileron-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		50F42ABFAC3A45088313F1C2 /* Aileron-SemiBoldItalic.otf */ = {isa = PBXFileReference; name = "Aileron-SemiBoldItalic.otf"; path = "../app/fonts/Gotham/aileron/Aileron-SemiBoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DF4F184EDF1E468F979DB3BC /* Aileron-Thin.otf */ = {isa = PBXFileReference; name = "Aileron-Thin.otf"; path = "../app/fonts/Gotham/aileron/Aileron-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD6D3AEADF4A4CA8B6A75A44 /* Aileron-ThinItalic.otf */ = {isa = PBXFileReference; name = "Aileron-ThinItalic.otf"; path = "../app/fonts/Gotham/aileron/Aileron-ThinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8F7DE3244CD34E2AA189EDF2 /* Aileron-UltraLight.otf */ = {isa = PBXFileReference; name = "Aileron-UltraLight.otf"; path = "../app/fonts/Gotham/aileron/Aileron-UltraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D30D7945471149C59FDA334D /* Aileron-UltraLightItalic.otf */ = {isa = PBXFileReference; name = "Aileron-UltraLightItalic.otf"; path = "../app/fonts/Gotham/aileron/Aileron-UltraLightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72F73E56D29A46CC832FC506 /* Gotham Condensed Black.otf */ = {isa = PBXFileReference; name = "Gotham Condensed Black.otf"; path = "../app/fonts/Gotham/Gotham Condensed/Gotham Condensed Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0A12AFEEEB14972933643E3 /* Gotham Condensed Bold.otf */ = {isa = PBXFileReference; name = "Gotham Condensed Bold.otf"; path = "../app/fonts/Gotham/Gotham Condensed/Gotham Condensed Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB74E0B896384015972B3104 /* Gotham Condensed Book.otf */ = {isa = PBXFileReference; name = "Gotham Condensed Book.otf"; path = "../app/fonts/Gotham/Gotham Condensed/Gotham Condensed Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B3A6BCC128124A15B5D92F6A /* Gotham Condensed Light.otf */ = {isa = PBXFileReference; name = "Gotham Condensed Light.otf"; path = "../app/fonts/Gotham/Gotham Condensed/Gotham Condensed Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A9028C0B99C94DEBB38856A7 /* Gotham Condensed Medium.otf */ = {isa = PBXFileReference; name = "Gotham Condensed Medium.otf"; path = "../app/fonts/Gotham/Gotham Condensed/Gotham Condensed Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3B88086B143B43F0A5D0A0B4 /* Gotham Condensed Thin.otf */ = {isa = PBXFileReference; name = "Gotham Condensed Thin.otf"; path = "../app/fonts/Gotham/Gotham Condensed/Gotham Condensed Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D2B4B25B6B9143C39790A1CF /* Gotham Condensed Ultra.otf */ = {isa = PBXFileReference; name = "Gotham Condensed Ultra.otf"; path = "../app/fonts/Gotham/Gotham Condensed/Gotham Condensed Ultra.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		11791A49E6C5460DA75C51F9 /* Gotham Condensed XLight.otf */ = {isa = PBXFileReference; name = "Gotham Condensed XLight.otf"; path = "../app/fonts/Gotham/Gotham Condensed/Gotham Condensed XLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		061EDE4565B247CD9048050C /* Gotham XNarrow Black.otf */ = {isa = PBXFileReference; name = "Gotham XNarrow Black.otf"; path = "../app/fonts/Gotham/Gotham Extra Narrow/Gotham XNarrow Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC5F620EF90D4380894317BF /* Gotham XNarrow Bold.otf */ = {isa = PBXFileReference; name = "Gotham XNarrow Bold.otf"; path = "../app/fonts/Gotham/Gotham Extra Narrow/Gotham XNarrow Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CCAAF78C1A8D4AECBEF4C8C0 /* Gotham XNarrow Book.otf */ = {isa = PBXFileReference; name = "Gotham XNarrow Book.otf"; path = "../app/fonts/Gotham/Gotham Extra Narrow/Gotham XNarrow Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		84C1F5A420704FF58A5E9395 /* Gotham XNarrow Light.otf */ = {isa = PBXFileReference; name = "Gotham XNarrow Light.otf"; path = "../app/fonts/Gotham/Gotham Extra Narrow/Gotham XNarrow Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8039649063CF4AA6ABF2ED7C /* Gotham XNarrow Medium.otf */ = {isa = PBXFileReference; name = "Gotham XNarrow Medium.otf"; path = "../app/fonts/Gotham/Gotham Extra Narrow/Gotham XNarrow Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C26C0B8B01D947E48C883D8A /* Gotham XNarrow Thin.otf */ = {isa = PBXFileReference; name = "Gotham XNarrow Thin.otf"; path = "../app/fonts/Gotham/Gotham Extra Narrow/Gotham XNarrow Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		639D4AACA6924725AF4582CE /* Gotham XNarrow Ultra.otf */ = {isa = PBXFileReference; name = "Gotham XNarrow Ultra.otf"; path = "../app/fonts/Gotham/Gotham Extra Narrow/Gotham XNarrow Ultra.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		40A09003A2374FB39276E56B /* Gotham XNarrow XLight.otf */ = {isa = PBXFileReference; name = "Gotham XNarrow XLight.otf"; path = "../app/fonts/Gotham/Gotham Extra Narrow/Gotham XNarrow XLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C0AC1949AAAD49FD8934A261 /* GothamNarrow-Bold.otf */ = {isa = PBXFileReference; name = "GothamNarrow-Bold.otf"; path = "../app/fonts/Gotham/Gotham Narrow/Dr.ELM/GothamNarrow-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43802F6EA6DD4670842B6CD6 /* GothamNarrow-Book.otf */ = {isa = PBXFileReference; name = "GothamNarrow-Book.otf"; path = "../app/fonts/Gotham/Gotham Narrow/Dr.ELM/GothamNarrow-Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C3D5B1677D24490C939B5924 /* GothamNarrow-Light.otf */ = {isa = PBXFileReference; name = "GothamNarrow-Light.otf"; path = "../app/fonts/Gotham/Gotham Narrow/Dr.ELM/GothamNarrow-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B51D18C4BDEF4F8AABE19816 /* GothamNarrow-Thin.otf */ = {isa = PBXFileReference; name = "GothamNarrow-Thin.otf"; path = "../app/fonts/Gotham/Gotham Narrow/Dr.ELM/GothamNarrow-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EC131F1B6B7E4F5C9F0F1921 /* Gotham Narrow Black.otf */ = {isa = PBXFileReference; name = "Gotham Narrow Black.otf"; path = "../app/fonts/Gotham/Gotham Narrow/HFJ/Gotham Narrow Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9703688510F34858B551DE16 /* Gotham Narrow Bold.otf */ = {isa = PBXFileReference; name = "Gotham Narrow Bold.otf"; path = "../app/fonts/Gotham/Gotham Narrow/HFJ/Gotham Narrow Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCD25155673A4B45988E0272 /* Gotham Narrow Book.otf */ = {isa = PBXFileReference; name = "Gotham Narrow Book.otf"; path = "../app/fonts/Gotham/Gotham Narrow/HFJ/Gotham Narrow Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D1FD4EFDDF64A87BF7A3FA3 /* Gotham Narrow Light.otf */ = {isa = PBXFileReference; name = "Gotham Narrow Light.otf"; path = "../app/fonts/Gotham/Gotham Narrow/HFJ/Gotham Narrow Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5673034469654A9DB40D18F4 /* Gotham Narrow Medium.otf */ = {isa = PBXFileReference; name = "Gotham Narrow Medium.otf"; path = "../app/fonts/Gotham/Gotham Narrow/HFJ/Gotham Narrow Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E2681EFE6BCF40C08FE7AEFD /* Gotham Narrow Thin.otf */ = {isa = PBXFileReference; name = "Gotham Narrow Thin.otf"; path = "../app/fonts/Gotham/Gotham Narrow/HFJ/Gotham Narrow Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		89E2C70A78654C6AA76BA376 /* Gotham Narrow Ultra.otf */ = {isa = PBXFileReference; name = "Gotham Narrow Ultra.otf"; path = "../app/fonts/Gotham/Gotham Narrow/HFJ/Gotham Narrow Ultra.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		738811D6F7A74F4CA5731ACF /* Gotham Narrow XLight.otf */ = {isa = PBXFileReference; name = "Gotham Narrow XLight.otf"; path = "../app/fonts/Gotham/Gotham Narrow/HFJ/Gotham Narrow XLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CC6F72E2CF7B411380A42D21 /* Gotham Black.otf */ = {isa = PBXFileReference; name = "Gotham Black.otf"; path = "../app/fonts/Gotham/Gotham Normal/Gotham Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5F627363BA9943FDB416B969 /* Gotham Bold.otf */ = {isa = PBXFileReference; name = "Gotham Bold.otf"; path = "../app/fonts/Gotham/Gotham Normal/Gotham Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		045DFF4011F14904B986B1B4 /* Gotham Book.otf */ = {isa = PBXFileReference; name = "Gotham Book.otf"; path = "../app/fonts/Gotham/Gotham Normal/Gotham Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		844DDDFF860847D487FCABE6 /* Gotham Light.otf */ = {isa = PBXFileReference; name = "Gotham Light.otf"; path = "../app/fonts/Gotham/Gotham Normal/Gotham Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0CD7430E084D4A5AB7C22D72 /* Gotham Medium.otf */ = {isa = PBXFileReference; name = "Gotham Medium.otf"; path = "../app/fonts/Gotham/Gotham Normal/Gotham Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D8A3ADB797A141C7820CF623 /* Gotham Thin.otf */ = {isa = PBXFileReference; name = "Gotham Thin.otf"; path = "../app/fonts/Gotham/Gotham Normal/Gotham Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3326376E36D9406FB5E63E52 /* Gotham Ultra.otf */ = {isa = PBXFileReference; name = "Gotham Ultra.otf"; path = "../app/fonts/Gotham/Gotham Normal/Gotham Ultra.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E41509090CBC4A8F99E5862C /* Gotham XLight.otf */ = {isa = PBXFileReference; name = "Gotham XLight.otf"; path = "../app/fonts/Gotham/Gotham Normal/Gotham XLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ECECAE7981D14E1590610E1B /* ArialNU.otf */ = {isa = PBXFileReference; name = "ArialNU.otf"; path = "../app/fonts/ArialNU.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1E8BD5E4E82D47AAA7439B11 /* Antonio-Bold.otf */ = {isa = PBXFileReference; name = "Antonio-Bold.otf"; path = "../app/fonts/Antonio-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		73B2BE7ED0AA4EEEB78CA3CD /* Antonio-Light.otf */ = {isa = PBXFileReference; name = "Antonio-Light.otf"; path = "../app/fonts/Antonio-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		54C6F071DAE04334A676BFB3 /* Antonio-Regular.otf */ = {isa = PBXFileReference; name = "Antonio-Regular.otf"; path = "../app/fonts/Antonio-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		421274D8673643789E49C5DC /* Antonio_bold.otf */ = {isa = PBXFileReference; name = "Antonio_bold.otf"; path = "../app/fonts/Antonio_bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		83FD863A9F2A406CB394F84B /* Antonio_light.otf */ = {isa = PBXFileReference; name = "Antonio_light.otf"; path = "../app/fonts/Antonio_light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D8CAC7740C1C4D39B6AF0402 /* Antonio.otf */ = {isa = PBXFileReference; name = "Antonio.otf"; path = "../app/fonts/Antonio.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB150880B75A4EE4956E903A /* DINPro-Bold.ttf */ = {isa = PBXFileReference; name = "DINPro-Bold.ttf"; path = "../app/fonts/DINPro-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8524BD934FDA4C74B277D9CD /* DINPro-Medium.ttf */ = {isa = PBXFileReference; name = "DINPro-Medium.ttf"; path = "../app/fonts/DINPro-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8F889285881849B39AD35DE3 /* DINPro.ttf */ = {isa = PBXFileReference; name = "DINPro.ttf"; path = "../app/fonts/DINPro.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A2418B09A2D2409184A19E27 /* DINPro_bold.ttf */ = {isa = PBXFileReference; name = "DINPro_bold.ttf"; path = "../app/fonts/DINPro_bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E5C234D93AD45C58FD6111A /* DINPro_medium.ttf */ = {isa = PBXFileReference; name = "DINPro_medium.ttf"; path = "../app/fonts/DINPro_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -578,6 +707,7 @@
 				00E356EF1AD99517003FC87E /* nizamiRNTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				9038943620FE4BAFBDE972A1 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -603,6 +733,79 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		9038943620FE4BAFBDE972A1 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				EC2ED5EDFE5D4E26BC9C60AF /* Anglecia-Pro-Display.otf */,
+				AF299560EBF74868ACF57926 /* Aileron-Black.otf */,
+				62C650284CDD44748D717100 /* Aileron-BlackItalic.otf */,
+				EE09C25A487C433386D2120F /* Aileron-Bold.otf */,
+				90C54C273C5E4A51AF421F13 /* Aileron-BoldItalic.otf */,
+				8975C075A4EC4291AD1D54BF /* Aileron-Heavy.otf */,
+				66331476DCD04EE6B0E86993 /* Aileron-HeavyItalic.otf */,
+				10480E554E364E879729B54C /* Aileron-Italic.otf */,
+				478EC310C3364930B189A23E /* Aileron-Light.otf */,
+				FB70C3119B9542E294B41B29 /* Aileron-LightItalic.otf */,
+				AC0E7C309E764B9185FC8C08 /* Aileron-Regular.otf */,
+				628D7E7E04654F9DB66743CC /* Aileron-SemiBold.otf */,
+				50F42ABFAC3A45088313F1C2 /* Aileron-SemiBoldItalic.otf */,
+				DF4F184EDF1E468F979DB3BC /* Aileron-Thin.otf */,
+				FD6D3AEADF4A4CA8B6A75A44 /* Aileron-ThinItalic.otf */,
+				8F7DE3244CD34E2AA189EDF2 /* Aileron-UltraLight.otf */,
+				D30D7945471149C59FDA334D /* Aileron-UltraLightItalic.otf */,
+				72F73E56D29A46CC832FC506 /* Gotham Condensed Black.otf */,
+				A0A12AFEEEB14972933643E3 /* Gotham Condensed Bold.otf */,
+				FB74E0B896384015972B3104 /* Gotham Condensed Book.otf */,
+				B3A6BCC128124A15B5D92F6A /* Gotham Condensed Light.otf */,
+				A9028C0B99C94DEBB38856A7 /* Gotham Condensed Medium.otf */,
+				3B88086B143B43F0A5D0A0B4 /* Gotham Condensed Thin.otf */,
+				D2B4B25B6B9143C39790A1CF /* Gotham Condensed Ultra.otf */,
+				11791A49E6C5460DA75C51F9 /* Gotham Condensed XLight.otf */,
+				061EDE4565B247CD9048050C /* Gotham XNarrow Black.otf */,
+				AC5F620EF90D4380894317BF /* Gotham XNarrow Bold.otf */,
+				CCAAF78C1A8D4AECBEF4C8C0 /* Gotham XNarrow Book.otf */,
+				84C1F5A420704FF58A5E9395 /* Gotham XNarrow Light.otf */,
+				8039649063CF4AA6ABF2ED7C /* Gotham XNarrow Medium.otf */,
+				C26C0B8B01D947E48C883D8A /* Gotham XNarrow Thin.otf */,
+				639D4AACA6924725AF4582CE /* Gotham XNarrow Ultra.otf */,
+				40A09003A2374FB39276E56B /* Gotham XNarrow XLight.otf */,
+				C0AC1949AAAD49FD8934A261 /* GothamNarrow-Bold.otf */,
+				43802F6EA6DD4670842B6CD6 /* GothamNarrow-Book.otf */,
+				C3D5B1677D24490C939B5924 /* GothamNarrow-Light.otf */,
+				B51D18C4BDEF4F8AABE19816 /* GothamNarrow-Thin.otf */,
+				EC131F1B6B7E4F5C9F0F1921 /* Gotham Narrow Black.otf */,
+				9703688510F34858B551DE16 /* Gotham Narrow Bold.otf */,
+				DCD25155673A4B45988E0272 /* Gotham Narrow Book.otf */,
+				2D1FD4EFDDF64A87BF7A3FA3 /* Gotham Narrow Light.otf */,
+				5673034469654A9DB40D18F4 /* Gotham Narrow Medium.otf */,
+				E2681EFE6BCF40C08FE7AEFD /* Gotham Narrow Thin.otf */,
+				89E2C70A78654C6AA76BA376 /* Gotham Narrow Ultra.otf */,
+				738811D6F7A74F4CA5731ACF /* Gotham Narrow XLight.otf */,
+				CC6F72E2CF7B411380A42D21 /* Gotham Black.otf */,
+				5F627363BA9943FDB416B969 /* Gotham Bold.otf */,
+				045DFF4011F14904B986B1B4 /* Gotham Book.otf */,
+				844DDDFF860847D487FCABE6 /* Gotham Light.otf */,
+				0CD7430E084D4A5AB7C22D72 /* Gotham Medium.otf */,
+				D8A3ADB797A141C7820CF623 /* Gotham Thin.otf */,
+				3326376E36D9406FB5E63E52 /* Gotham Ultra.otf */,
+				E41509090CBC4A8F99E5862C /* Gotham XLight.otf */,
+				ECECAE7981D14E1590610E1B /* ArialNU.otf */,
+				1E8BD5E4E82D47AAA7439B11 /* Antonio-Bold.otf */,
+				73B2BE7ED0AA4EEEB78CA3CD /* Antonio-Light.otf */,
+				54C6F071DAE04334A676BFB3 /* Antonio-Regular.otf */,
+				421274D8673643789E49C5DC /* Antonio_bold.otf */,
+				83FD863A9F2A406CB394F84B /* Antonio_light.otf */,
+				D8CAC7740C1C4D39B6AF0402 /* Antonio.otf */,
+				FB150880B75A4EE4956E903A /* DINPro-Bold.ttf */,
+				8524BD934FDA4C74B277D9CD /* DINPro-Medium.ttf */,
+				8F889285881849B39AD35DE3 /* DINPro.ttf */,
+				A2418B09A2D2409184A19E27 /* DINPro_bold.ttf */,
+				4E5C234D93AD45C58FD6111A /* DINPro_medium.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -685,7 +888,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -1050,6 +1253,71 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				14591EB7BE1F405391989CCB /* Anglecia-Pro-Display.otf in Resources */,
+				B6168E8D269346B589168365 /* Aileron-Black.otf in Resources */,
+				33B232B0670D4A4DA35831FC /* Aileron-BlackItalic.otf in Resources */,
+				C5BC3A1CFDA0419BAF8627EC /* Aileron-Bold.otf in Resources */,
+				3FD3EAA9C65842458C11F27E /* Aileron-BoldItalic.otf in Resources */,
+				DB45D31644FF4DE5B111FBAE /* Aileron-Heavy.otf in Resources */,
+				DCB9B15D943A42ECB7257CDA /* Aileron-HeavyItalic.otf in Resources */,
+				EB7C6BF7A89F4ADF93446F9F /* Aileron-Italic.otf in Resources */,
+				6A648E887C3D46648DFF17EA /* Aileron-Light.otf in Resources */,
+				30ED1596DA7C4F58BE3722D7 /* Aileron-LightItalic.otf in Resources */,
+				434DD930A0FF4771BA8886F7 /* Aileron-Regular.otf in Resources */,
+				63A362A5E1C147D3A2478814 /* Aileron-SemiBold.otf in Resources */,
+				2A87C907FED940EBA1D6B77A /* Aileron-SemiBoldItalic.otf in Resources */,
+				3F0457A2B3C146A79966FC07 /* Aileron-Thin.otf in Resources */,
+				F75D280249A9487091F15756 /* Aileron-ThinItalic.otf in Resources */,
+				EE5321EDCE834A6F89AD1B7F /* Aileron-UltraLight.otf in Resources */,
+				00168915BDDA4915B43D3496 /* Aileron-UltraLightItalic.otf in Resources */,
+				5F3E39FA1A7F4B6FB63D0E5D /* Gotham Condensed Black.otf in Resources */,
+				FC0C39A777C240D5AA117A41 /* Gotham Condensed Bold.otf in Resources */,
+				7E96009041BE421F9D5B312A /* Gotham Condensed Book.otf in Resources */,
+				076363D538854DF9AB220E55 /* Gotham Condensed Light.otf in Resources */,
+				47FACD2DF6EA4B74BFCD5C39 /* Gotham Condensed Medium.otf in Resources */,
+				94309ED1FFBD4CA6ACB561D4 /* Gotham Condensed Thin.otf in Resources */,
+				63D106916ED04F398D713564 /* Gotham Condensed Ultra.otf in Resources */,
+				DC7EE7EF72544BD081BEF1AC /* Gotham Condensed XLight.otf in Resources */,
+				59FFD203A2B8435EAEE974B5 /* Gotham XNarrow Black.otf in Resources */,
+				5B33E858E49A405EAD1B2F55 /* Gotham XNarrow Bold.otf in Resources */,
+				AA44756EBA4B4C5E96C17675 /* Gotham XNarrow Book.otf in Resources */,
+				C7A6141161044C44BDCEF826 /* Gotham XNarrow Light.otf in Resources */,
+				ED5A9B2F623F40C3A8A6871B /* Gotham XNarrow Medium.otf in Resources */,
+				928499249F994518B1F351D0 /* Gotham XNarrow Thin.otf in Resources */,
+				22388F87CBC54236A2745BC3 /* Gotham XNarrow Ultra.otf in Resources */,
+				E42AD18DD1B8481EAB19E8C7 /* Gotham XNarrow XLight.otf in Resources */,
+				A14D7534DB354E91830C3D27 /* GothamNarrow-Bold.otf in Resources */,
+				B897F358A3084595B03BA8C1 /* GothamNarrow-Book.otf in Resources */,
+				1DDBCF123D554D13809550BF /* GothamNarrow-Light.otf in Resources */,
+				9BD76E98ED2E4DD9BD2985C0 /* GothamNarrow-Thin.otf in Resources */,
+				D0473686605C4026A532F838 /* Gotham Narrow Black.otf in Resources */,
+				3ECB78E52D884C49830E6CCD /* Gotham Narrow Bold.otf in Resources */,
+				7F134CDF131D4AE29F3E1229 /* Gotham Narrow Book.otf in Resources */,
+				D736A42C0C134920B894A1D3 /* Gotham Narrow Light.otf in Resources */,
+				AE26178364A74EBA8983D180 /* Gotham Narrow Medium.otf in Resources */,
+				E28F13E5590E4B0D89156656 /* Gotham Narrow Thin.otf in Resources */,
+				5AB4652777AC430C9BD9F5D1 /* Gotham Narrow Ultra.otf in Resources */,
+				D0E80041086E4ACE8EB64B81 /* Gotham Narrow XLight.otf in Resources */,
+				F62BACCFDA574B938A3559F8 /* Gotham Black.otf in Resources */,
+				46A722D179C4432DBECC1D91 /* Gotham Bold.otf in Resources */,
+				9AFD5EE3158249BE921DE3D2 /* Gotham Book.otf in Resources */,
+				B946C3B91CC043CFB0B204D5 /* Gotham Light.otf in Resources */,
+				756587BC706648519A2F0BC1 /* Gotham Medium.otf in Resources */,
+				51BD39EA9D6B482CA3ED97EE /* Gotham Thin.otf in Resources */,
+				ECDD9785FE8144528789C470 /* Gotham Ultra.otf in Resources */,
+				4667A5FA0DBB4BF8975FAED1 /* Gotham XLight.otf in Resources */,
+				E478E7442C864A7483F246BE /* ArialNU.otf in Resources */,
+				655D650A96C94E83B88ACA4E /* Antonio-Bold.otf in Resources */,
+				C23444F19E37494889002BB8 /* Antonio-Light.otf in Resources */,
+				1098E11A7CEB436BA01CE1AE /* Antonio-Regular.otf in Resources */,
+				48ABB28B289F4AB4A8E969BA /* Antonio_bold.otf in Resources */,
+				B9090A25BF0E48C6AB67CCB2 /* Antonio_light.otf in Resources */,
+				435346E02C5C49B29A0FFED1 /* Antonio.otf in Resources */,
+				3C2F2CF4D2C74EC2A206F398 /* DINPro-Bold.ttf in Resources */,
+				DB7E31A3B0844EBE9B24443B /* DINPro-Medium.ttf in Resources */,
+				756B78EA6C76484AABC564ED /* DINPro.ttf in Resources */,
+				9FD41D0F260248ED80068FFB /* DINPro_bold.ttf in Resources */,
+				1852581C1AC74BEAAC3533F1 /* DINPro_medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1181,6 +1449,12 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nizamiRN.app/nizamiRN";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -1198,6 +1472,12 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nizamiRN.app/nizamiRN";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -1216,6 +1496,9 @@
 				);
 				PRODUCT_NAME = nizamiRN;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -1233,6 +1516,9 @@
 				);
 				PRODUCT_NAME = nizamiRN;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -1259,6 +1545,12 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -1285,6 +1577,12 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -1310,6 +1608,12 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nizamiRN-tvOS.app/nizamiRN-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -1335,6 +1639,12 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nizamiRN-tvOS.app/nizamiRN-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};

@@ -4,19 +4,22 @@ import React, { Component } from 'react';
 
 import BCard from '../components/BCard'
 
-import {
-  Text, 
+import { 
   View,
   Image
 } from 'react-native';
+import KeyEvent from 'react-native-keyevent';
 
 //components
 import BMovieCard from '../components/BMovieCard'
 import BButton from '../components/BButton'
+import Text from '../components/Text'
+
 
 // config
 import styles from '../config/styles'
 import colors from '../config/colors'
+import buttons from '../config/buttons'
 
 class MovieInfo extends Component {
   constructor(props) {
@@ -25,6 +28,38 @@ class MovieInfo extends Component {
       username: 'Nagibaba',
     }
     this.onPress = this.onPress.bind(this)
+  }
+
+  componentDidMount(){
+
+    KeyEvent.onKeyUpListener((keyEvent) => {
+      
+          switch(keyEvent.keyCode){
+            case buttons.enter:
+              this.onPress()
+              break;
+
+            case buttons.scan:
+              this.props.navigation.navigate('SessionContinues')
+              break;
+
+            default:
+          }
+
+    })
+
+
+  }
+
+  componentWillUnmount() {
+    // if you are listening to keyDown
+    // KeyEvent.removeKeyDownListener();
+ 
+     // if you are listening to keyUp
+    KeyEvent.removeKeyUpListener();
+ 
+     // if you are listening to keyMultiple
+    // KeyEvent.removeKeyMultipleListener();
   }
 
   onPress(){

@@ -48,6 +48,7 @@ export default StyleSheet.create({
   name:{
     fontSize: 18,
     fontWeight: 'bold',
+    // fontFamily: 'DINPro',
     color: colors.black,
   },
   lang:{
@@ -81,6 +82,9 @@ export default StyleSheet.create({
   alignCenter:{
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  ticketWrapper:{
+    width: 45
   },
   ticket:{
     borderWidth: 2,

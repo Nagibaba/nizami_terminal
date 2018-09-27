@@ -5,7 +5,6 @@ import React, { Component } from 'react';
 import BCard from '../components/BCard'
 
 import {
-  Text, 
   View,
   Image
 } from 'react-native';
@@ -13,6 +12,7 @@ import {
 //components
 import BMovieCard from '../components/BMovieCard'
 import BButton from '../components/BButton'
+import Text from '../components/Text'
 
 // config
 import styles from '../config/styles'

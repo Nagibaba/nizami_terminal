@@ -5,7 +5,6 @@ import React, { Component } from 'react';
 import BCard from '../components/BCard'
 
 import {
-  Text, 
   View,
   Image
 } from 'react-native';
@@ -13,10 +12,14 @@ import {
 //components
 import BMovieCard from '../components/BMovieCard'
 import BButton from '../components/BButton'
+import Text from '../components/Text'
 
 // config
 import styles from '../config/styles'
 import colors from '../config/colors'
+
+//modules 
+import KeyEvent from 'react-native-keyevent';
 
 class MovieInfo extends Component {
   constructor(props) {
@@ -27,6 +30,25 @@ class MovieInfo extends Component {
     this.onPress = this.onPress.bind(this)
   }
 
+  componentDidMount(){
+    
+    KeyEvent.onKeyUpListener((keyEvent) => {
+          if(keyEvent.keyCode==66){
+            // Ent
+            this.onPress()
+          }
+    })
+  }
+  componentWillUnmount() {
+    // if you are listening to keyDown
+    // KeyEvent.removeKeyDownListener();
+ 
+     // if you are listening to keyUp
+    KeyEvent.removeKeyUpListener();
+ 
+     // if you are listening to keyMultiple
+    // KeyEvent.removeKeyMultipleListener();
+  }
   onPress(){
     this.props.navigation.navigate('EnterCode')
   }
@@ -42,8 +64,7 @@ class MovieInfo extends Component {
           <View style={styles.shadow}>
             <Image 
                 source={require('../images/Nova-logo-clear-manchester.png')}
-            
-            style={{width: 50, height: 20, resizeMode: 'contain'}} />
+                style={{width: 50, height: 20, resizeMode: 'contain'}} />
           </View>
         </View>
       </View>

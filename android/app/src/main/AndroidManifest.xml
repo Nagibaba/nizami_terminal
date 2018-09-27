@@ -4,6 +4,22 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
+
+    <!-- 允许应用程序写入外部存储器 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许使用相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- NFC权限声明 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -21,6 +37,10 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+      
+      <activity android:name="com.nizamirn.ScanAct" />
+      <!--<activity android:name="com.smartdevice.aidltestdemo.ScannerActivity" />-->
+      <!--<activity android:name="com.smartdevice.aidltestdemo.scan.ScanSetActivity"/>-->
     </application>
 
 </manifest>

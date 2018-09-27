@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
+import Text from '../Text'
 import GText from '../GText'
 import styles from './styles'
 
@@ -21,7 +22,7 @@ export default class BCard extends Component {
 	      <View style={[styles.card, active]}>
 	      	<View style={styles.col3}>
 	      		<View style={styles.row3}>
-	      			<GText style={styles.title}>
+	      			<GText style={[styles.title, {fontFamily: 'ArialNU'}]}>
 	      				{children.title}
 
 	      			</GText>
@@ -67,11 +68,11 @@ export default class BCard extends Component {
 	      		</View>
 	      		<View style={styles.row1}>
 	      			<Text style={styles.lang}>
-	      				{children.mobile}
+	      				{children.email}
 	      			</Text>
 	      		</View>
 	      	</View>
-	      	<View style={styles.col1}>
+	      	<View style={styles.ticketWrapper}>
 	      		<View style={[styles.row1, styles.stickCBottom]} >
 		      		
 		      		<View style={styles.ticket}>
